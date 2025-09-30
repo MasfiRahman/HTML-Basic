@@ -53,11 +53,44 @@
             </table>
             <hr>
             <form>
-                <p> Username : <input type="text" placeholder="Only letters and numbers" required pattern="[a-zA-Z0-9]+" </p>
+                <datalist id ="names">
+                    <option value="masfi">masfi</option>
+                    <option value="mahi">mahi</option>
+                    <option value="ismum">ismum</option>
+                    <option value="sami">sami</option>
+                    <option value="samiul">samiul</option>
+                </datalist>
+
+                <p> Username : <input type="text" list="names" placeholder="Only letters and numbers" required pattern="[a-zA-Z0-9]+" </p>
                 <p> Password : <input type="password" placeholder="Enter your password" required" </p>
                 <p> Email : <input type="email" placeholder="Enter your email" required" </p>
+                 
+                <p>  Religion : <input type="checkbox"> Islam
+                                <input type="checkbox">Hindu
+                </p>
+                <p> Gender : <input type="radio" name="gender">Male
+                            <input type="radio" name="gender">Female
 
-
+                </p>
+                <p>
+                    Department : <select>
+                                    <option value="cse">CSE</option>
+                                    <option value="eee">EEE</option>
+                                    <option value="bba">BBA</option>
+                                    <option value="law">LAW</option>
+                                </select>
+                </p>
+                <p>
+                    Feedback : <br>
+                    <textarea rows="4" cols="50" placeholder="Write your feedback here..."></textarea> 
+                </p>
+                <p>
+                    <input type="submit" value="Sign Up">
+                    <input type="reset" value="Clear">
+                </p>
+                <hr>
+                <p>Developed By <font color = green size = 5 >&copy; Masfi Rahman </font> </p>
+                &copy; 2024 Study with Masfi
             </form>
     </body>
 </html>
